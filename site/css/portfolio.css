@@ -80,3 +80,16 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* new one */
+/* position of menu */
+
+@media only screen and (min-width: 700px) {
+  .menu{
+    position: absolute;
+    right: 0px;
+    margin-right: 5%;
+  }
+};
+
+
