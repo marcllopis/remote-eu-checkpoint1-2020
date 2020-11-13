@@ -1,3 +1,8 @@
+@media screen and ( device-width: 700px ) {
+
+}
+
+
 .pink-bg {
   background-color: pink;
 }
@@ -80,3 +85,41 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.menu { 
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 1250px;
+  
+}
+
+.container {
+  align-items: flex-start;
+}
+
+@media only screen and (max-width: 700px){
+  .desktop{
+    display: none;
+    
+  }
+}
+
+@media only screen and (min-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+
+  }}
+
+  @media only screen and (max-width: 700px){
+    .skills{ display: flex;
+      flex-direction: column
+
+    }}
+
+    .disabled{
+      color: lightblue;
+      background-color: white;
+    }
+    
