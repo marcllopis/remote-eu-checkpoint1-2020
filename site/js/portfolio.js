@@ -42,10 +42,12 @@ document.getElementById("modifyDevTools").addEventListener("click",function(e){
 })
 
 //Task 7
-// function addBackDevTools(){
-//   let ulBackDevTools = document.getElementById("back-dev-tools");
-//   let liBackDevTool = document.createElement("li");
-//   liBackDevTool.innerHTML = "123";
-//   ulBackDevTools.appendChild(liBackDevTool);
-//   console.log("bu");
-// }
+
+document.getElementById("formAddTools").addEventListener("click", function(e){
+  let ulBackDevTools = document.getElementById("back-dev-tools");
+  let liBackDevTool = document.createElement("li");
+  let inputDev = document.getElementById("devTool");
+  liBackDevTool.innerHTML = inputDev.value;
+  ulBackDevTools.appendChild(liBackDevTool);
+})
+
