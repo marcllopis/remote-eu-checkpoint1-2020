@@ -22,6 +22,16 @@ const scores = [
   "3:4"
 ];
 
+
+for(let i = 0; i<scores.length;i++){
+  scores[i] = Number;
+  console.log(scores[i]);
+}
+
+scores.filter()
+
+console.log(scores);
+
 function getPoints(array) {
   // Your code here !
 }
