@@ -19,5 +19,10 @@ const people = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  let isOverAge = arr.filter(e => e.age >=18)
+  let isMale = isOverAge.filter(e => e.sex ==="male")
+  let isFemale = isOverAge.filter(e => e.sex ==="female")
+  return [isMale, isFemale]
 }
+
+console.log(findAdults(people))
