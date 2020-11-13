@@ -117,3 +117,12 @@ p {
     margin: 0 auto
   }
 }
+/*not needed as well, but my button looked bad*/
+button {
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f76c6c;
+  border: none;
+  cursor: pointer;
+}
