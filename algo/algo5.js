@@ -23,7 +23,22 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+
+
+  return array.reduce((sum, stringCouple) => {
+    let arrWithScores = stringCouple.split(":").map(str => parseInt(str));
+    if (arrWithScores[0] > arrWithScores[1]) {
+      return sum + 3;
+    }
+    else if (arrWithScores[0] === arrWithScores[1]) {
+      return sum + 1;
+    }
+    else {
+      return sum;
+    }
+  }
+    , 0);
+
 }
 
 console.log(getPoints(scores));

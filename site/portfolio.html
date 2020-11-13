@@ -18,20 +18,35 @@
         </div>
       </nav>
     </header>
+
+
+
     <main class="container">
       <!-- First banner with title, description, avatar and image desktop -->
-      <!-- You can use the avatar image on the folder image -->
-      <section class="introduction">
-        <figure class="desktop">
-          <img src="image/desktop.svg" alt="desktop" />
-        </figure>
-      </section>
+      <div class="title-container">
+        <h2>FullStack Developer</h2>
+        <p>I code beautufully simple things and I am happy.</p>
+        <img src="image/avatar.svg"  id = "avatar" alt="my-avatar" />
+      
+      
+      
+        <!-- You can use the avatar image on the folder image -->
+        <section class="introduction">
+          <figure class="desktop">
+            <img src="image/desktop.svg" alt="desktop" />
+          </figure>
+        </section>
+     
+      </div>
+
 
       <!-- Second banner with description of your name and your presentation -->
       <section class="presentation">
         <div class="description pink-bg">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
+        
+        <button id= "button-change-name">Modify text and color</button>
         </div>
 
         <!-- Bloc of list of skill front end and back end -->
@@ -44,9 +59,12 @@
               <h2 class="pink-text">Languages I speak:</h2>
               <p>MySql</p>
               <h2 class="pink-text">Dev Tools:</h2>
-              <ul>
+              <ul id = "back-end-tools">
                 <li>VScode</li>
               </ul>
+              <input type="text" id="input" name="name">
+              <button id = "add-tools-button">Add Dev tools</button>
+
             </figure>
           </div>
           <div class="column">
@@ -61,7 +79,9 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
                 <li>You can modify</li>
+                
               </ul>
+              <button id = "modify-tools-button">Modify</button>
             </figure>
           </div>
         </div>
