@@ -15,8 +15,20 @@ Your final list should like this:
   26-100
 */
 
-function theaterSieges() {
-  // Your code here !
+const theaterSieges = () => {
+  //26 columns of seats
+  let column =[]
+  for(let i = 1; i <= 26; i++){
+    column.push(i)
+}
+//100 seats in a column
+ let seats =[]
+ for(let i = 1; i<=100; i++){
+   seats.push(i)
+ }
+
+ return column.map(col => seats.map(seat => col  + '-' + seat))
+
 }
 
 console.log(theaterSieges());

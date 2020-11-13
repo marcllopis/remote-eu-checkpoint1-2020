@@ -18,6 +18,9 @@ const people = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
-function findAdults(arr) {
-  // Your code here !
+const findAdults = arr => {
+  let female = people.filter(fem => fem.age > 18 && fem.sex === 'female')
+  let male = people.filter(mal => mal.age > 18 && mal.sex === 'male')
+
+  return [female,male]
 }

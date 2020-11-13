@@ -22,8 +22,20 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
-  // Your code here !
+let getPoints = array => {
+  let finalScore = 0;
+  for(let i = 0; i<array.length; i++){
+    if(array[i][0] > array[i][2]){
+      finalScore+=3
+    }else if(array[i][0] === array[i][2]){
+      finalScore+=1
+    }else if(array[i][0] < array[i][2]){
+      finalScore+=0
+    }
+  }
+return finalScore
+
 }
 
 console.log(getPoints(scores));
+

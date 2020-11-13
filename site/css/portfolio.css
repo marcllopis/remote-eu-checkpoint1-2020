@@ -80,3 +80,54 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.navbar {
+  display: inline;
+}
+
+.menu {
+ display: flex;
+ justify-content: flex-end;
+}
+
+.container {
+  text-align: center;
+}
+
+@media all and (max-width: 700px){
+.introduction {
+  display: none;
+}
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+}
+
+@media all and (min-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+}
+
+.disabled {
+  opacity: 40%;
+}
+
+.nameButton, .modify-btn, .add-btn {
+  background-color: pink;
+  padding: 5px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px black;
+}
+

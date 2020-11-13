@@ -8,6 +8,18 @@ sumArr( ["2", "7", "3"], ["2", "4", "9"] ) should return ["4", "11", "12"]
 sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) should return ["4", "11", "12", "8", "2"]
 */
 
-function sumArr(arrayA, arrayB) {
-  // Your code here !
+let sumArr = (arrayA, arrayB) => {
+  if(!arrayA || !arrayB) return 0
+   let sum = [];
+   let chop = arrayA.slice(0,arrayB.length)
+   let extra = arrayA.slice(arrayB.length)
+  if(arrayA.length === arrayB.length){
+   sum = arrayA.map( (num,i)=> Number(num)+Number(arrayB[i]) )
+  }if(arrayA.length > arrayB.length){
+    sum = chop.map((num,i)=> Number(num) + Number(arrayB[i]))
+    for(let i = 0; i< extra.length; i++){
+      sum.push(extra[i])
+    }
+  }
+return sum.map(item=> String(item))
 }
