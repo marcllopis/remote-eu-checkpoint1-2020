@@ -47,6 +47,22 @@ button:focus {
   justify-content: center;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
 
 
 @media screen and (max-width: 700px) {
@@ -57,12 +73,22 @@ button:focus {
   .introduction {
     display: none;
   }
+
+  .contents {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contents .box {
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 700px) {
   .skills {
     display: flex;
     justify-content: center;
+    flex-direction: row-reverse;
   }
 
   .column {
