@@ -14,11 +14,28 @@ let nameDisplay = document.getElementById("name")
 changeName =() => {
     let color = prompt("Please choose a color (HEX)","#750ff7")
     let name = prompt("Please enter your name")
+    let backgroundArray = document.getElementsByClassName("pink-bg")
+    let linksArray = document.getElementsByTagName("a")
     nameDisplay.innerHTML=name
     nameDisplay.style.color="white"
     console.log(color)
-    document.getElementsByClassName("pink-bg")[0].style.backgroundColor = color
-    /*TODO, MAKE THIS MAP WORK*/
+    backgroundArray[0].style.backgroundColor = color
+    /*EXTRA TODO, MAKE THIS MAP WORK*//*FORLOOP WORKS*/
 /*     document.getElementsByClassName("pink-bg").map(e => {e.style.backgroundColor = color}) */
+    for(i=0; i<linksArray.length; i++){
+        linksArray[i].style.color = color
+    }
+    /*extra. want a map here too*/
 }
 nameButton.addEventListener("click", () => changeName())
+
+/*show front end dev tools*/
+let myDevTools = ["VSCode", "Github", "Terminal"]
+let DevToolsBtn = document.getElementById("DevToolsBtn")
+let toolsArray = document.getElementById("front-dev-tools").getElementsByTagName("li")
+showDevTools = () => {
+    for (i=0; i<toolsArray.length; i++){
+        toolsArray[i].innerHTML=myDevTools[i]
+    }
+}
+DevToolsBtn.addEventListener("click", () => showDevTools())
