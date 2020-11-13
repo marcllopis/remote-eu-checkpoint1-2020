@@ -1,3 +1,4 @@
+
 /*
 Write a function which can determine whether a year is a leap year. It must return `true` if it is, and `false` otherwise.
 Reminder: A leap year checks **one** of these rules:
@@ -8,8 +9,18 @@ Note bene: To check whether a number is divisible by another, you should use the
 */
 
 function isLeapYear(year) {
-  // TODO: Your code here
+  let result; 
+  if (isLeapYear/400 == 0 ){
+    return true 
+  } else if (isLeapYear/4 == 0 && isLeapYear/100 != 0) {
+  return true 
+  } else {
+  return false 
 }
+}
+
+
+
 
 console.log("1900: ",isLeapYear(1900)); // should be false
 console.log("2000: ",isLeapYear(2000)); // should be true

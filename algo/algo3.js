@@ -16,7 +16,16 @@ Your final list should like this:
 */
 
 function theaterSieges() {
-  // Your code here !
+  let row = [];
+  for (let i = 0; i < 100; i++){
+    let seat = []
+    for(let j = 0; j < 100; j++){
+      seat.push([i] + "-" + [j])
+    }
+    row.push(seat)
+  }
+  return row
 }
 
 console.log(theaterSieges());
+
