@@ -18,6 +18,14 @@ const people = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
+let maleArr = [];
+let femaleArr = [];
+
 function findAdults(arr) {
   // Your code here !
+  maleArr = arr.map((item) => item.age >=18 && item.sex == "male");
+  return maleArr
 }
+
+findAdults(people)
+

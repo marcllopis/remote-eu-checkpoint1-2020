@@ -67,7 +67,7 @@ for(let i=0; i<li.length; i++){
 }
 }
 
-
+//super-bonus
 let myul = document.getElementById('myul')
 let btn3 = document.querySelector('.btn3')
 let myinput = document.querySelector('.myinput')
