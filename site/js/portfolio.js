@@ -75,4 +75,5 @@ btn3.addEventListener('click',button3)
 
 function button3(){
     myul.innerHTML += '<li>' + myinput.value + '</li>'
+    myinput.value = ''
 }
