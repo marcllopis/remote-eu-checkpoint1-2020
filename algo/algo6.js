@@ -9,5 +9,11 @@ sumArr( ["2", "7", "3", "8", "2"], ["2", "4", "9"] ) should return ["4", "11", "
 */
 
 function sumArr(arrayA, arrayB) {
-  // Your code here !
-}
+  if (arrayA.length >= arrayB.length) {
+    return arrayA.map((numA, i) => Number(numA) + (arrayB[i] === undefined ? 0 : Number(arrayB[i])));
+  } else {
+    return arrayB.map((numB, index) => Number(numB) + (arrayA[index] === undefined ? 0 : Number(arrayA[index])));
+  }
+};
+
+console.log(sumArr(["2", "3", "4"], ["2", "4", "1", "2"]));
