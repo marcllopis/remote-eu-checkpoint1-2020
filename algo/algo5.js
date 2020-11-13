@@ -23,7 +23,11 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+  let result = 0;
+  array.map(el => {
+    return el.split(':')[0] >= 3 ? result += 3 : result;
+  })
+  return result;
 }
 
 console.log(getPoints(scores));
