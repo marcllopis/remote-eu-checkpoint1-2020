@@ -15,7 +15,7 @@ console.log("2004: ",isLeapYear(2004)); //should be true
 console.log("2019: ",isLeapYear(2019)); // should be false
 console.log("2020: ",isLeapYear(2020)); // should be true
 
-// results
+// result:
 // 1900: false
 // 2000: true
 // 2004: true
