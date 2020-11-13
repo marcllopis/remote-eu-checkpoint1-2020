@@ -80,6 +80,10 @@ img {
   color: #750ff7;
 }
 
+.projects .disabled{
+  opacity:0.5
+}
+
 p {
   padding-left: 15px;
   padding-right: 15px;
@@ -97,5 +101,6 @@ p {
   .skills{
     display:flex;
     flex-direction:row-reverse;
+    justify-content:center
   }
 }
