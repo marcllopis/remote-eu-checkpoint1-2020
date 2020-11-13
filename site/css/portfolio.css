@@ -80,3 +80,46 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (min-width: 700px){
+.menu{
+  position: absolute;
+  right:0;
+}
+}
+@media only screen and (min-width: 700px){
+  .logo{
+   position: absolute;
+   left:0;
+  }
+  }
+  @media only screen and (min-width: 700px){
+  .container{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 700px){
+  .avatar{
+    display : none;
+  }
+}
+@media only screen and (min-width: 700px){
+  .skills{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 700px){
+  .skills{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 700px){
+  .skills{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
