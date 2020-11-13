@@ -129,7 +129,7 @@ p {
 
   }
 
-  .btn{
+  .btn, .btn2{
     background-color: darksalmon;
     opacity: 0.5;
     height: 35px;
@@ -137,3 +137,4 @@ p {
     border-radius: 20%;
     color: white;
   }
+  
