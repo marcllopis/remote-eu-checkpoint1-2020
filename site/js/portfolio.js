@@ -21,7 +21,8 @@ changeName =() => {
     console.log(color)
     backgroundArray[0].style.backgroundColor = color
     /*EXTRA TODO, MAKE THIS MAP WORK*//*FORLOOP WORKS*/
-/*     document.getElementsByClassName("pink-bg").map(e => {e.style.backgroundColor = color}) */
+    /* can i even map this?? */
+    /* document.getElementsByClassName("pink-bg").map(e => e.style.backgroundColor = color) */
     for(i=0; i<linksArray.length; i++){
         linksArray[i].style.color = color
     }
