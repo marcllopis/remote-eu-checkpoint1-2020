@@ -22,8 +22,19 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
-  // Your code here !
-}
+const getPoints = (array) => {
+  let ourPoints = 0;
+  for (let i=0; i<array.length; i++) {
+    if (array[i].slice(0, 1) > array[i].slice(2)) {
+      ourPoints += 3;
+    } else if (array[i].slice(0, 1) == array[i].slice(2)) {
+      ourPoints += 1;
+    }
+  }
+  return ourPoints;
+};
 
 console.log(getPoints(scores));
+
+// result:
+// 12

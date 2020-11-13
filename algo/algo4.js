@@ -18,6 +18,22 @@ const people = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
-function findAdults(arr) {
-  // Your code here !
-}
+const findAdults = (arr) => {
+  let adultFemales = arr.filter(person => (person.sex === 'female' && person.age >= 18))
+  let adultMales = arr.filter(person => (person.sex === 'male' && person.age >= 18))
+  return [adultFemales, adultMales];
+};
+
+console.log(findAdults(people));
+
+// result:
+// [
+//   { name: 'Mary Poppins', age: 32, sex: 'female' },
+//   { name: 'Carla Bruni', age: 54, sex: 'female' },
+//   { name: 'Penelope Cruz', age: 47, sex: 'female' }
+// ]
+// [
+//   { name: 'Tony Stark', age: 36, sex: 'male' },
+//   { name: 'Homer Simpson', age: 45, sex: 'male' },
+//   { name: 'Leonardo Di Caprio', age: 42, sex: 'male' }
+// ]
