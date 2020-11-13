@@ -103,4 +103,9 @@ p {
     flex-direction:row-reverse;
     justify-content:center
   }
+  .contents{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap
+  }
 }
