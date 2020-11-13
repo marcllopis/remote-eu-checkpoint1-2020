@@ -22,11 +22,9 @@ const scores = [
   "3:4"
 ];
 
-function getPoints(array) {
+const getPoints = (array) => {
   let result = 0;
-  array.map(el => {
-    return el.split(':')[0] >= 3 ? result += 3 : result;
-  })
+  array.map(el => el.split(':')[0] >= 3 ? result += 3 : result)
   return result;
 }
 

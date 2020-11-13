@@ -15,7 +15,7 @@ Your final list should like this:
   26-100
 */
 
-function theaterSieges() {
+const theaterSieges = () => {
   for (let i = 1; i <= 26; i++) {
     for (let j = 1; j <= 100; j++) {
       console.log(`${i} - ${j}`)
