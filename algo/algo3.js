@@ -17,6 +17,11 @@ Your final list should like this:
 
 function theaterSieges() {
   // Your code here !
+  for (i = 1; i <= 26; i++) {
+    for(j = 1; j <= 100; j++ )
+    console.log([`${i} -  ${j}`]);
+
+  }
 }
 
 console.log(theaterSieges());
