@@ -1,3 +1,51 @@
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.title-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: auto;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+
+@media (max-width:700px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    flex-direction: column-reverse;
+
+  }
+}
+
+@media (min-width:700px) {
+  .contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
 .pink-bg {
   background-color: pink;
 }
