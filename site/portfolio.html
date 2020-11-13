@@ -25,7 +25,7 @@
             <!-- First banner with title, description, avatar and image desktop -->
             <!-- You can use the avatar image on the folder image -->
             <section class="introduction">
-              <div class = "intro-title">FullStack Developer</div>
+              <h1 class = "intro-title">FullStack Developer</h1>
               <div class = "intro-description">I code beautifully simple things, and I love what I do</div>
               <img class = "intro-avatar" src = "image/avatar-bis.png" alt="Avatar">
               </div>
@@ -49,6 +49,7 @@
                         naturally curious, and perpetually working on improving
                         my chops one problem at a time.
                     </p>
+                    <button id = "modifyNameAndColor">Modify text and color</button>
                 </div>
 
                 <!-- Bloc of list of skill front end and back end -->
@@ -61,9 +62,13 @@
                             <h2 class="pink-text">Languages I speak:</h2>
                             <p>MySql</p>
                             <h2 class="pink-text">Dev Tools:</h2>
-                            <ul>
-                                <li>VScode</li>
-                            </ul>
+                            <form id = "formAddTools" onsubmit="addBackDevTools()">
+                              <ul id="back-dev-tools">
+                                  <li>VScode</li>
+                              </ul>
+                              <input type="text" id="devTool" placeholder = "Add your dev tools" >
+                              <input type = "submit" value = "Add">
+                          </form>
                         </figure>
                     </div>
                     <div class="column">
@@ -79,6 +84,7 @@
                                 <li>You can modify</li>
                                 <li>You can modify</li>
                             </ul>
+                            <button id = "modifyDevTools">Modify</button>
                         </figure>
                     </div>
                 </div>
