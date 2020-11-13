@@ -77,7 +77,20 @@ body .purple {
   background-color: #750ff7;
 }
 
-
+.btn {
+  padding: 10px;
+  background: #ae69ea;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.input_input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+}
 
 @media screen and (max-width: 700px) {
   .first_banner {
