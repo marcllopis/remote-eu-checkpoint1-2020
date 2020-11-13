@@ -1,14 +1,18 @@
 /*
-Write a function which can determine whether a year is a leap year. It must return `true` if it is, and `false` otherwise.
+Write a function which can determine whether a year is a leap year. 
+It must return `true` if it is, and `false` otherwise.
 Reminder: A leap year checks **one** of these rules:
 - It's divisible by 4, without being divisible by 100
 - It's divisible by 400
 Ex: 2004, 2016 and 2020 are leap years
-Note bene: To check whether a number is divisible by another, you should use the "modulo" operator (%)
+Note bene: To check whether a number is divisible by another, you 
+should use the "modulo" operator (%)
 */
 
 function isLeapYear(year) {
-  // TODO: Your code here
+  if(year % 400 === 0) return "Leap year!";
+  else if(year % 4 === 0 && year % 100 !== 0) return "Leap year!";
+  else return "Not a leap year!";
 }
 
 console.log("1900: ",isLeapYear(1900)); // should be false
