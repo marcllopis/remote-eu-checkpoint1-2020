@@ -10,7 +10,7 @@
   color: #750ff7;
 }
 
-.title{
+.container{
   text-align:center
 }
 
@@ -89,5 +89,12 @@ p {
   .navbar{
     display:flex;
     justify-content:space-between
+  }
+
+  .introduction{
+    display: block
+  }
+  .skills{
+    display:flex
   }
 }
