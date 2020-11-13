@@ -109,3 +109,11 @@ p {
     flex-wrap:wrap
   }
 }
+
+  /*.box width and margin not needed in checkpoint, but i didnt like how it looked on mobile*/
+@media only screen and (max-width: 700px) {
+  .box{
+    width: 75vw;
+    margin: 0 auto
+  }
+}
