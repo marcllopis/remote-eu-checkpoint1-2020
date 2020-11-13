@@ -23,7 +23,18 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+  let victories;
+  let defeats;
+  let result = 0;
+  for (let i = 0; i < array.length; i++){
+    victories = array[i].substring(0, array[i].indexOf(":"));
+    defeats = array[i].substring(array[i].indexOf(":") + 1, array[i].length);
+    if (victories > defeats){
+      result += 3;
+    } else if (victories === defeats){
+      result += 1;
+    }
+  }
+  return result;
 }
-
 console.log(getPoints(scores));

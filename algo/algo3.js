@@ -16,7 +16,13 @@ Your final list should like this:
 */
 
 function theaterSieges() {
-  // Your code here !
+  let res = [];
+  for (let i = 1; i <= 26; ++i){
+    for (let j = 1; j <= 100; ++j){
+      res.push(`${i}-${j}`)
+    }
+  }
+  return res;
 }
 
 console.log(theaterSieges());
