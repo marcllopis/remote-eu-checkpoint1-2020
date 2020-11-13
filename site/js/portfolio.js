@@ -12,7 +12,10 @@ function pictChange(){
 
 let btn = document.querySelector('.btn')
  let name = document.getElementById('name')
- let pinkBg = document.getElementById('pinkBg')
+ let pinkBg = document.querySelectorAll(".pink-bg")
+ let pinkText = document.querySelectorAll(".pink-text")
+ 
+
  
 
 btn.addEventListener('click',button)
@@ -23,7 +26,15 @@ function button(){
     name.innerText = newName
     name.style.color = "white"
 
-    pinkBg.style.backgroundColor = newColor
+    for(let i =0; i< pinkBg.length; i++){
+        pinkBg[i].style.backgroundColor = newColor
+    }
+
+    for(let j =0; j< pinkText.length; j++){
+        pinkText[j].style.color = newColor
+    }
+    
+    
 }
 
 
