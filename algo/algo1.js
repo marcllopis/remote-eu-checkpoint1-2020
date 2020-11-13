@@ -6,8 +6,9 @@ thirdAngle(90, 30) should return 60
 thirdAngle(20, 80) should return 80
 */
 
-function thirdAngle(a, b) {
-  // Your code here !
+const thirdAngle = (a, b) => {
+  const sumOfAngles = 180;
+  return sumOfAngles - (a + b);
 }
 
 console.log(thirdAngle(90, 30));
