@@ -22,12 +22,19 @@ for (i=0; i<26; i++){
 for (i=0; i<100; i++){
   seats.push(i+1)
 }
-
+/* RETURNS STRING */
 theaterSieges = () => {
   let seatsArray = columns.map(columns => seats.map(seats => {
     return `${columns}-${seats} \n`;
 }).join("")).join("")
 return seatsArray
 }
+/* RETURNS ARRAY */
+/* theaterSieges = () => {
+  let seatsArray = columns.map(columns => seats.map(seats => {
+    return `${columns}-${seats}`;
+}))
+return seatsArray
+} */
 
 console.log(theaterSieges());
