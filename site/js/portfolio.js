@@ -19,3 +19,11 @@ function devToolChanger() {
     collection[1].innerHTML = "more JS"
     collection[2].innerHTML = "never CSS"
 }
+
+function addNewSkill() {
+    let node = document.createElement("LI");
+    let textnode = document.createTextNode(document.getElementById("newSkill").value);
+    node.appendChild(textnode);
+    document.getElementById("skillz").appendChild(node);
+
+}
