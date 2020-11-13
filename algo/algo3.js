@@ -23,11 +23,11 @@ for (i=0; i<100; i++){
   seats.push(i+1)
 }
 
-function theaterSieges() {
+theaterSieges = () => {
   let seatsArray = columns.map(columns => seats.map(seats => {
     return `${columns}-${seats} \n`;
-}).join(""))
-console.log(seatsArray.join(""))
+}).join("")).join("")
+return seatsArray
 }
-theaterSieges()
-/* console.log(theaterSieges()); */
+
+console.log(theaterSieges());
