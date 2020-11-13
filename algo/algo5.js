@@ -26,7 +26,6 @@ getPoints = (array) => {
   let pointArray = array.map(e => e.split(":"))
   for (i=0; i<pointArray.length; i++){
     pointArray[i][0]>pointArray[i][1] ? points+=3 : pointArray[i][0]<pointArray[i][1] ? points+=0 : points++
-    console.log(points)
   }
 
 return points
