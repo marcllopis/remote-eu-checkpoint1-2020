@@ -19,5 +19,25 @@ const people = [
 ];
 
 function findAdults(arr) {
-  // Your code here !
+  return [arr.filter(p => p.sex === "female" && p.age > 17), arr.filter(p => p.sex === "male" && p.age > 17)]
 }
+
+console.log(findAdults(people));
+
+/*
+[Running] node "c:\Users\Carlos\Documents\WCS\remote-eu-checkpoint1-2020\algo\algo4.js"
+[
+  [
+    { name: 'Mary Poppins', age: 32, sex: 'female' },
+    { name: 'Carla Bruni', age: 54, sex: 'female' },
+    { name: 'Penelope Cruz', age: 47, sex: 'female' }
+  ],
+  [
+    { name: 'Tony Stark', age: 36, sex: 'male' },
+    { name: 'Homer Simpson', age: 45, sex: 'male' },
+    { name: 'Leonardo Di Caprio', age: 42, sex: 'male' }
+  ]
+]
+
+[Done] exited with code=0 in 0.673 seconds
+*/

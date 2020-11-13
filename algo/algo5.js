@@ -23,7 +23,17 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+  let results = [];
+  array.forEach(score => {
+    score = score.split(":");
+    results.push(Number(score[0]) > Number(score[1]) ? 3 : Number(score[0]) === Number(score [1]) ? 1 : 0);
+  });
+  return results.reduce((total, score) => total + score);
 }
 
 console.log(getPoints(scores));
+
+/*
+PS C:\Users\Carlos\Documents\WCS\remote-eu-checkpoint1-2020\algo> node algo5.js
+12
+*/

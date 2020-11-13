@@ -16,7 +16,14 @@ Your final list should like this:
 */
 
 function theaterSieges() {
-  // Your code here !
+  //By list I guess you mean an array?
+  let ans = []
+  for (let i = 1; i < 27; i++) {
+    for (let j = 1; j < 101; j++ ) {
+      ans.push(i + "-" + j)
+    }
+  }
+  return ans
 }
 
 console.log(theaterSieges());
