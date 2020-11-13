@@ -9,6 +9,10 @@
 .purple-text {
   color: #750ff7;
 }
+.navbar{
+  display:flex;
+  justify-content:space-between
+}
 
 .description {
   color: #ffffff;
