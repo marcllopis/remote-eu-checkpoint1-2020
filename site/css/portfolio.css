@@ -25,7 +25,11 @@
 
 .desktop {
   margin: 80px 0 -5px 0;
+  @media screen and (max-width: 700px){
+    
+  }
 }
+
 
 .skills {
   margin-top: -30px;
@@ -80,3 +84,45 @@ p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+
+
+/*Added Code*/
+
+/*The banner must be centered in the page for 
+screens greater than 700px*/
+.firstbanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 700px) {
+  .firstbanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /*The list of skill must be on the same 
+  line for screens greater than 700px*/
+  .skills {
+    flex-wrap: wrap;
+  /*When the list skill are in the same 
+  line, the front skill block must be in 
+  left and the back skill block in the right for screens greater than 700px*/
+    flex-direction: row;
+}
+}  
+
+
+  @media (max-width: 700px) {
+    .desktop {
+      display: none;
+    }
+    /*The front skill block must be above the
+     back skill block for screens less than 700px*/
+    .skills {
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+    }
+  }

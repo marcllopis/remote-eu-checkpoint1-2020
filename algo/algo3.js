@@ -23,7 +23,7 @@ let theater = [];
 //row
 for (let i = 0; i < 26; i++) {
   let rows = [];
-  //colum
+  //column
   for (let j = 0; j < 100; j++) {
       rows.push(`${i + 1}-${j + 1}`)
   }
