@@ -106,4 +106,15 @@ p {
   align-items: center;
 }
 
+/* introduction dissapear */
+@media (max-width:700px) {
+  .introduction{
+      display:none;
+  }
+}
 
+@media (max-width:700px) {
+  .introduction{
+      display:none;
+  }
+}
