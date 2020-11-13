@@ -1,14 +1,15 @@
-const changePic = document.querySelector(".avatar");
-
+const changePic = document.querySelector(".avatar2");
+const image = document.getElementById("avatar");
+let image2 = true;
 
 changePic.addEventListener("click", function(e){
-   console.log("hiii");
-   if (isCatNaked){
-     nakedCatImage.src = "image/logo-wcs.png";
-     isCatNaked = false;
+   if (image2){
+     image.src="image/avatar.svg";
+     image2 = false;
    } else {
-     nakedCatImage.src = "image/avatar-bis.png";
-      isCatNaked = true;
+     image.src="image/avatar-bis.png";
+      image2 = true;
     }
   });
+
   
