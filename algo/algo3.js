@@ -16,7 +16,27 @@ Your final list should like this:
 */
 
 function theaterSieges() {
-  // Your code here !
+  let sieges = [];
+  for (let siege = 1; siege<27; siege++ ){
+    let theater = [];
+    for (let seats = 1; seats < 101; seats++) {
+      theater.push((siege) + " - " +seats)
+    }
+    sieges.push(theater)
+  }
+  return sieges;
 }
+
+// function chess() {
+//   let ans = [];
+//   for (let letter = 97; letter < 105; letter++) {
+//     let buffer = [];  
+//     for (let number = 1; number < 9; number++) {
+//       buffer.push(String.fromCharCode(letter) + " - " + number)
+//     }
+//     ans.push(buffer);
+//   }
+//   return ans
+// }
 
 console.log(theaterSieges());
