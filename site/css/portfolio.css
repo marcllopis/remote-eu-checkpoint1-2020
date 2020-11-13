@@ -1,9 +1,11 @@
 .pink-bg {
   background-color: pink;
+  transition: all .25s ease-in-out;
 }
 
 .pink-text {
   color: pink;
+  transition: all .25s ease-in-out;
 }
 
 .purple-text {
