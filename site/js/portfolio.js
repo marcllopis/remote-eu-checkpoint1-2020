@@ -39,3 +39,16 @@ showDevTools = () => {
     }
 }
 DevToolsBtn.addEventListener("click", () => showDevTools())
+
+/*add tools to backend*/
+let text = document.getElementById("myText");
+let button = document.getElementById("backEndBtn");
+let list = document.getElementById("back-dev-tools")
+
+addTools = () => {
+    let newText = document.createElement("li");
+    newText.innerHTML = text.value
+    list.appendChild(newText)
+    text.value=""
+}
+button.addEventListener("click", () => addTools())
