@@ -9,9 +9,9 @@
 .purple-text {
   color: #750ff7;
 }
-.navbar{
-  display:flex;
-  justify-content:space-between
+
+.title{
+  text-align:center
 }
 
 .description {
@@ -83,4 +83,11 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media only screen and (min-width: 700px) {
+  .navbar{
+    display:flex;
+    justify-content:space-between
+  }
 }
