@@ -7,10 +7,13 @@ Ex: 2004, 2016 and 2020 are leap years
 Note bene: To check whether a number is divisible by another, you should use the "modulo" operator (%)
 */
 
-function isLeapYear(year) {
+/* function isLeapYear(year) {
   return year%100===0 ? year%400===0 ? true:false:
   year%4===0 ? true:false
-}
+} */
+
+isLeapYear = (year) => year%100===0 ? year%400===0?true:false : year%4===0?true:false
+
 
 console.log("1900: ",isLeapYear(1900)); // should be false
 console.log("2000: ",isLeapYear(2000)); // should be true
