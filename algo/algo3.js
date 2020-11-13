@@ -17,6 +17,13 @@ Your final list should like this:
 
 function theaterSieges() {
   // Your code here !
+let rows = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,25]
+//let columns =100;
+let result = rows.map(test=>{
+  let result2=[];
+  for (let i =0; i<=100; i++){
+    result2.push(`${test}-${i+1}`)
+  }
+})
 }
-
 console.log(theaterSieges());
