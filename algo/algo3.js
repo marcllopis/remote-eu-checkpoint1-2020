@@ -15,8 +15,11 @@ Your final list should like this:
   26-100
 */
 
-function theaterSieges() {
-  // Your code here !
-}
 
-console.log(theaterSieges());
+for (let i = 1; i <= 26; i++) {
+  let arr = []
+  for (let j = 1; j <= 100; j++) {
+    arr.push(`${i} - ${j}`)
+    console.log(`${i} - ${j}`)
+  }
+}

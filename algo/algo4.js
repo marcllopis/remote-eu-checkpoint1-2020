@@ -18,6 +18,21 @@ const people = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
-function findAdults(arr) {
-  // Your code here !
-}
+const adultFemales = people.filter(element => element.age >=18 && element.sex === 'female');
+//   console.log(adultFemales);
+  
+  const adultMales = people.filter(element => element.age >=18 && element.sex === 'male');
+//   console.log(adultMales);
+  
+
+const femalesArr = [adultFemales]
+// console.log(femalesArr);
+const malesArr = [adultMales]
+// console.log(malesArr);
+
+
+function findAdults() {
+    console.log(femalesArr.concat(malesArr));
+} 
+
+findAdults()
