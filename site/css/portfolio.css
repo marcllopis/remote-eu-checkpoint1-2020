@@ -95,6 +95,7 @@ p {
     display: block
   }
   .skills{
-    display:flex
+    display:flex;
+    flex-direction:row-reverse;
   }
 }
