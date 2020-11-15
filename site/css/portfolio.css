@@ -1,13 +1,6 @@
-.pink-bg {
-  background-color: pink;
-}
 
-.pink-text {
-  color: pink;
-}
-
-.purple-text {
-  color: #750ff7;
+.container {
+  text-align: center;
 }
 
 .description {
@@ -23,14 +16,30 @@
   text-align: center;
 }
 
-.desktop {
-  margin: 80px 0 -5px 0;
+.pink-bg {
+  background-color: pink;
 }
 
+.pink-text {
+  color: pink;
+}
+
+.purple-text {
+  color: #750ff7;
+}
+
+.desktop {
+  margin: 80px 0 -5px 0;
+  display: none;
+}
+
+
 .skills {
+  display: flex;
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -68,6 +77,7 @@
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
 }
 
+
 img {
   max-width: 100%;
 }
@@ -75,8 +85,40 @@ img {
 .projects a {
   color: #750ff7;
 }
+.disabled {
+  opacity: 0.5;
+}
+
 
 p {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/*DESKTOP*/
+@media only screen and (min-width: 700px){
+   .navbar {
+     display: flex;
+     justify-content: space-between;
+     
+   }
+   
+   .introduction {
+     text-align: center;
+   }
+   .desktop {
+     display: block;
+   }
+   .skills {
+     flex-direction: row-reverse;
+     justify-content: space-around;
+
+   }
+   .contents {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    
+   }
+
+} 

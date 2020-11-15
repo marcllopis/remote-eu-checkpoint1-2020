@@ -21,9 +21,23 @@ const scores = [
   "2:4",
   "3:4"
 ];
-
+ let points = 0;
 function getPoints(array) {
-  // Your code here !
+  
+ let newArray = array.map(element => element.split(":"));
+ for(let i = 0; i < array.length; i++) {
+     if(newArray[i][0] > newArray[i][1]) {
+        points += 3;
+     } else{
+       if(newArray[i][0] === newArray[i][1]) {
+        points ++;
+
+       } else{
+         points +=0;
+       }    
+     }    
+ }
+ return points
 }
 
 console.log(getPoints(scores));

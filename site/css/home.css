@@ -1,5 +1,8 @@
+
+
 main {
   padding: 50px;
+
 }
 
 .menu {
@@ -7,6 +10,7 @@ main {
   justify-content: flex-end;
   width: 100%;
   align-items: center;
+ 
 }
 
 .logo {
@@ -21,6 +25,7 @@ main {
 .home {
   font-family: Roboto;
   color: #39424e;
+  display: flex;
 }
 
 .array {

@@ -18,6 +18,32 @@ const people = [
   { name: "Penelope Cruz", age: 47, sex: "female" }
 ];
 
+
+  
+let adultsArray = [];
 function findAdults(arr) {
-  // Your code here !
+
+  // let adults = arr.filter(element => element.age >= 18); 
+
+   let female = arr.filter(element => element.age >= 18).filter(element => element.sex === "female");
+
+   let male = arr.filter(element => element.age >= 18).filter(element => element.sex === "male");
+
+   return [female, male];
 }
+
+console.log(findAdults(people));
+
+// function findAdults() {
+
+//   // let adults = arr.filter(element => element.age >= 18); 
+
+//    let female = people.filter(element => element.age >= 18).filter(element => element.sex === "female");
+
+//    let male = people.filter(element => element.age >= 18).filter(element => element.sex === "male");
+
+//    return [female, male];
+// }
+
+// console.log(findAdults());
+
