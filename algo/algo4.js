@@ -1,5 +1,6 @@
 /*
-Here is an array of people. Write a function which will return a new array, itself containing two arrays:
+Here is an array of people. Write a function which will return a 
+new array, itself containing two arrays:
 - The first one contains only adult females
 - The second one contains only adult males
 (Given a person is an adult if she/he is 18 or older)
@@ -34,16 +35,7 @@ function findAdults(arr) {
 
 console.log(findAdults(people));
 
-// function findAdults() {
 
-//   // let adults = arr.filter(element => element.age >= 18); 
 
-//    let female = people.filter(element => element.age >= 18).filter(element => element.sex === "female");
 
-//    let male = people.filter(element => element.age >= 18).filter(element => element.sex === "male");
-
-//    return [female, male];
-// }
-
-// console.log(findAdults());
 

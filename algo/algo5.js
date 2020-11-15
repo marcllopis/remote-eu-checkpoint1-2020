@@ -1,12 +1,15 @@
 /*
 Our soccer team plays a tournament in which it played 10 matches.
-Match results are noted "3:0": first number is **our** team's goals count ; the second is the other team's.
+Match results are noted "3:0": first number is **our** team's goals 
+count ; the second is the other team's.
 To know our team's score, we follow these rules:
 - Victory: 3pts
 - Draw: 1pt
 - Defeat: 0pt
-Given an array with our match's results, write a function which will return our score.
-To test your function, if you "feed" your function the array under this text, you should get 12 points.
+Given an array with our match's results, write a function which will 
+return our score.
+To test your function, if you "feed" your function the array under this 
+text, you should get 12 points.
 */
 
 const scores = [

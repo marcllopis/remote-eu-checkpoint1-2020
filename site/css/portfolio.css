@@ -12,8 +12,9 @@
 }
 
 .description p {
-  width: 60%;
+  width: 75%;
   text-align: center;
+  padding-top: 40px;
 }
 
 .pink-bg {
@@ -43,6 +44,7 @@
 }
 
 .column {
+  width: 100%;
   border-left: 1px solid #e6ecf8;
   border-right: 1px solid #e6ecf8;
   border-bottom: 1px solid #e6ecf8;
@@ -68,8 +70,13 @@
   padding: 0;
 }
 
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .box {
-  width: 25%;
+  width: 100%;
   padding: 30px;
   border: 1px solid #e6ecf8;
   margin: 20px;
