@@ -23,7 +23,7 @@ const scores = [
 ];
 
 function getPoints(array) {
-  // Your code here !
+  return array.reduce((total, currentValue) => total += currentValue[0] > currentValue[2] ? 3 : currentValue[0] === currentValue[2] ? 1 : 0, 0)
 }
 
 console.log(getPoints(scores));

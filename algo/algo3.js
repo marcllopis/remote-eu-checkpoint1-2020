@@ -15,8 +15,16 @@ Your final list should like this:
   26-100
 */
 
+
+
 function theaterSieges() {
-  // Your code here !
+  let theater = []
+  for (let columns = 1; columns <= 26; columns++) {
+    for (let seats = 1; seats <= 100; seats++ ) {
+      theater.push(columns + "-" + seats)
+    }
+  }
+  return theater
 }
 
 console.log(theaterSieges());

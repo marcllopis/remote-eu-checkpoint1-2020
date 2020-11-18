@@ -1,3 +1,5 @@
+
+
 .pink-bg {
   background-color: pink;
 }
@@ -23,14 +25,18 @@
   text-align: center;
 }
 
+/* Hide on phone for part 3 */
 .desktop {
-  margin: 80px 0 -5px 0;
+  display: none;
 }
 
+/* Display them with reversed order */
 .skills {
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -79,4 +85,47 @@ img {
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+
+@media (min-width: 700px) {
+  /* First part */
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: auto;
+  }
+
+  /* 2nd part */
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Hide on phone for part 3 */
+  .desktop {
+    display: block;
+    margin: 20px;
+  }
+
+  /* Use row reverse on desktop and column reverse for mvl */
+  .skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* SUPER BONUS */
+  .contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+/* BONUS: Disabling link opacity */
+.disabled {
+  opacity: 50%;
 }
