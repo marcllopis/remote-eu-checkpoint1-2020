@@ -12,7 +12,7 @@ function isLeapYear(year) {
     return true
   }
     return false
-  
+  // returns no need
 }
 
 console.log("1900: ",isLeapYear(1900)); // should be false

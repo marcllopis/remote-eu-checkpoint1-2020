@@ -36,3 +36,13 @@ function findAdults() {
 } 
 
 findAdults()
+
+
+
+function findAdults(arr) {
+  let adultFemales = arr.filter(person => person.sex === 'female' && person.age >=18)
+  let adultMales = arr.filter(person => person.sex === 'male' && person.age >=18)
+  return [adultFemales, adultMales]
+}
+
+console.log(findAdults(people));

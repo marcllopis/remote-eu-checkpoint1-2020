@@ -23,3 +23,14 @@ for (let i = 1; i <= 26; i++) {
     console.log(`${i} - ${j}`)
   }
 }
+
+function theaterSieges() {
+  let theater = []
+  for (let columns = 1;columns<=26; columns++){
+    for (let seats = 1; seats<=100; seats ++) {
+      theater.push (columns + '-' + rows)
+    }
+  }
+  return theater
+}
+ console.log(theaterSieges);

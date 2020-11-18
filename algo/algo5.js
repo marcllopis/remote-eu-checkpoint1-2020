@@ -23,17 +23,10 @@ const scores = [
 ];
 
 
-for(let i = 0; i<scores.length;i++){
-  scores[i] = Number;
-  console.log(scores[i]);
-}
-
-scores.filter()
-
-console.log(scores);
-
 function getPoints(array) {
-  // Your code here !
+  return array.reduce((total, currentValue) => {
+  return total += currentValue[0] > currentValue[2] ? 3 : currentValue[0] ===
+  currentValue[2] ? 1 : 0},0)
 }
 
 console.log(getPoints(scores));
